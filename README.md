@@ -1,11 +1,13 @@
 # api documentation for  [websocket (v1.0.24)](https://github.com/theturtle32/WebSocket-Node)  [![npm package](https://img.shields.io/npm/v/npmdoc-websocket.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-websocket) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-websocket.svg)](https://travis-ci.org/npmdoc/node-npmdoc-websocket)
 #### Websocket Client & Server Library implementing the WebSocket protocol as specified in RFC 6455.
 
-[![NPM](https://nodei.co/npm/websocket.png?downloads=true)](https://www.npmjs.com/package/websocket)
+[![NPM](https://nodei.co/npm/websocket.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/websocket)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-websocket/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-websocket_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-websocket/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-websocket/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-websocket/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-websocket/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-websocket/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-websocket/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -16,7 +18,6 @@
 {
     "author": {
         "name": "Brian McKelvey",
-        "email": "brian@worlize.com",
         "url": "https://www.worlize.com/"
     },
     "browser": "lib/browser.js",
@@ -29,7 +30,6 @@
     "contributors": [
         {
             "name": "Iñaki Baz Castillo",
-            "email": "ibc@aliax.net",
             "url": "http://dev.sipdoc.net"
         }
     ],
@@ -77,13 +77,11 @@
     "main": "index",
     "maintainers": [
         {
-            "name": "theturtle32",
-            "email": "brian@worlize.com"
+            "name": "theturtle32"
         }
     ],
     "name": "websocket",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/theturtle32/WebSocket-Node.git"
@@ -102,7 +100,6 @@
 # <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
 
 #### [module websocket](#apidoc.module.websocket)
-1.  [function <span class="apidocSignatureSpan">websocket.</span>WebSocketRouterRequest (webSocketRequest, resolvedProtocol)](#apidoc.element.websocket.WebSocketRouterRequest)
 1.  [function <span class="apidocSignatureSpan">websocket.</span>client (config)](#apidoc.element.websocket.client)
 1.  [function <span class="apidocSignatureSpan">websocket.</span>connection (socket, extensions, protocol, maskOutgoingPackets, config)](#apidoc.element.websocket.connection)
 1.  [function <span class="apidocSignatureSpan">websocket.</span>frame (maskBytes, frameHeader, config)](#apidoc.element.websocket.frame)
@@ -110,9 +107,6 @@
 1.  [function <span class="apidocSignatureSpan">websocket.</span>router (config)](#apidoc.element.websocket.router)
 1.  [function <span class="apidocSignatureSpan">websocket.</span>server (config)](#apidoc.element.websocket.server)
 1.  [function <span class="apidocSignatureSpan">websocket.</span>w3cwebsocket (url, protocols, origin, headers, requestOptions, clientConfig)](#apidoc.element.websocket.w3cwebsocket)
-1.  object <span class="apidocSignatureSpan">websocket.</span>BufferUtil
-1.  object <span class="apidocSignatureSpan">websocket.</span>Validation
-1.  object <span class="apidocSignatureSpan">websocket.</span>WebSocketRouterRequest.prototype
 1.  object <span class="apidocSignatureSpan">websocket.</span>client.prototype
 1.  object <span class="apidocSignatureSpan">websocket.</span>connection.prototype
 1.  object <span class="apidocSignatureSpan">websocket.</span>deprecation
@@ -120,23 +114,8 @@
 1.  object <span class="apidocSignatureSpan">websocket.</span>request.prototype
 1.  object <span class="apidocSignatureSpan">websocket.</span>router.prototype
 1.  object <span class="apidocSignatureSpan">websocket.</span>server.prototype
-1.  object <span class="apidocSignatureSpan">websocket.</span>utils
 1.  object <span class="apidocSignatureSpan">websocket.</span>w3cwebsocket.prototype
 1.  string <span class="apidocSignatureSpan">websocket.</span>version
-
-#### [module websocket.BufferUtil](#apidoc.module.websocket.BufferUtil)
-1.  [function <span class="apidocSignatureSpan">websocket.</span>BufferUtil ()](#apidoc.element.websocket.BufferUtil.BufferUtil)
-
-#### [module websocket.Validation](#apidoc.module.websocket.Validation)
-1.  [function <span class="apidocSignatureSpan">websocket.</span>Validation ()](#apidoc.element.websocket.Validation.Validation)
-
-#### [module websocket.WebSocketRouterRequest](#apidoc.module.websocket.WebSocketRouterRequest)
-1.  [function <span class="apidocSignatureSpan">websocket.</span>WebSocketRouterRequest (webSocketRequest, resolvedProtocol)](#apidoc.element.websocket.WebSocketRouterRequest.WebSocketRouterRequest)
-1.  [function <span class="apidocSignatureSpan">websocket.WebSocketRouterRequest.</span>super_ ()](#apidoc.element.websocket.WebSocketRouterRequest.super_)
-
-#### [module websocket.WebSocketRouterRequest.prototype](#apidoc.module.websocket.WebSocketRouterRequest.prototype)
-1.  [function <span class="apidocSignatureSpan">websocket.WebSocketRouterRequest.prototype.</span>accept (origin, cookies)](#apidoc.element.websocket.WebSocketRouterRequest.prototype.accept)
-1.  [function <span class="apidocSignatureSpan">websocket.WebSocketRouterRequest.prototype.</span>reject (status, reason, extraHeaders)](#apidoc.element.websocket.WebSocketRouterRequest.prototype.reject)
 
 #### [module websocket.client](#apidoc.module.websocket.client)
 1.  [function <span class="apidocSignatureSpan">websocket.</span>client (config)](#apidoc.element.websocket.client.client)
@@ -258,12 +237,6 @@
 1.  [function <span class="apidocSignatureSpan">websocket.server.prototype.</span>shutDown ()](#apidoc.element.websocket.server.prototype.shutDown)
 1.  [function <span class="apidocSignatureSpan">websocket.server.prototype.</span>unmount ()](#apidoc.element.websocket.server.prototype.unmount)
 
-#### [module websocket.utils](#apidoc.module.websocket.utils)
-1.  [function <span class="apidocSignatureSpan">websocket.utils.</span>BufferingLogger (identifier, uniqueID)](#apidoc.element.websocket.utils.BufferingLogger)
-1.  [function <span class="apidocSignatureSpan">websocket.utils.</span>eventEmitterListenerCount (emitter, type)](#apidoc.element.websocket.utils.eventEmitterListenerCount)
-1.  [function <span class="apidocSignatureSpan">websocket.utils.</span>extend (dest, source)](#apidoc.element.websocket.utils.extend)
-1.  [function <span class="apidocSignatureSpan">websocket.utils.</span>noop ()](#apidoc.element.websocket.utils.noop)
-
 #### [module websocket.w3cwebsocket](#apidoc.module.websocket.w3cwebsocket)
 1.  [function <span class="apidocSignatureSpan">websocket.</span>w3cwebsocket (url, protocols, origin, headers, requestOptions, clientConfig)](#apidoc.element.websocket.w3cwebsocket.w3cwebsocket)
 
@@ -274,35 +247,6 @@
 
 
 # <a name="apidoc.module.websocket"></a>[module websocket](#apidoc.module.websocket)
-
-#### <a name="apidoc.element.websocket.WebSocketRouterRequest"></a>[function <span class="apidocSignatureSpan">websocket.</span>WebSocketRouterRequest (webSocketRequest, resolvedProtocol)](#apidoc.element.websocket.WebSocketRouterRequest)
-- description and source-code
-```javascript
-function WebSocketRouterRequest(webSocketRequest, resolvedProtocol) {
-    // Superclass Constructor
-    EventEmitter.call(this);
-
-    this.webSocketRequest = webSocketRequest;
-    if (resolvedProtocol === '____no_protocol____') {
-        this.protocol = null;
-    }
-    else {
-        this.protocol = resolvedProtocol;
-    }
-    this.origin = webSocketRequest.origin;
-    this.resource = webSocketRequest.resource;
-    this.resourceURL = webSocketRequest.resourceURL;
-    this.httpRequest = webSocketRequest.httpRequest;
-    this.remoteAddress = webSocketRequest.remoteAddress;
-    this.webSocketVersion = webSocketRequest.webSocketVersion;
-    this.requestedExtensions = webSocketRequest.requestedExtensions;
-    this.cookies = webSocketRequest.cookies;
-}
-```
-- example usage
-```shell
-n/a
-```
 
 #### <a name="apidoc.element.websocket.client"></a>[function <span class="apidocSignatureSpan">websocket.</span>client (config)](#apidoc.element.websocket.client)
 - description and source-code
@@ -640,142 +584,6 @@ function W3CWebSocket(url, protocols, origin, headers, requestOptions, clientCon
 - example usage
 ```shell
 n/a
-```
-
-
-
-# <a name="apidoc.module.websocket.BufferUtil"></a>[module websocket.BufferUtil](#apidoc.module.websocket.BufferUtil)
-
-#### <a name="apidoc.element.websocket.BufferUtil.BufferUtil"></a>[function <span class="apidocSignatureSpan">websocket.</span>BufferUtil ()](#apidoc.element.websocket.BufferUtil.BufferUtil)
-- description and source-code
-```javascript
-BufferUtil = function () { [native code] }
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.websocket.Validation"></a>[module websocket.Validation](#apidoc.module.websocket.Validation)
-
-#### <a name="apidoc.element.websocket.Validation.Validation"></a>[function <span class="apidocSignatureSpan">websocket.</span>Validation ()](#apidoc.element.websocket.Validation.Validation)
-- description and source-code
-```javascript
-Validation = function () { [native code] }
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.websocket.WebSocketRouterRequest"></a>[module websocket.WebSocketRouterRequest](#apidoc.module.websocket.WebSocketRouterRequest)
-
-#### <a name="apidoc.element.websocket.WebSocketRouterRequest.WebSocketRouterRequest"></a>[function <span class="apidocSignatureSpan">websocket.</span>WebSocketRouterRequest (webSocketRequest, resolvedProtocol)](#apidoc.element.websocket.WebSocketRouterRequest.WebSocketRouterRequest)
-- description and source-code
-```javascript
-function WebSocketRouterRequest(webSocketRequest, resolvedProtocol) {
-    // Superclass Constructor
-    EventEmitter.call(this);
-
-    this.webSocketRequest = webSocketRequest;
-    if (resolvedProtocol === '____no_protocol____') {
-        this.protocol = null;
-    }
-    else {
-        this.protocol = resolvedProtocol;
-    }
-    this.origin = webSocketRequest.origin;
-    this.resource = webSocketRequest.resource;
-    this.resourceURL = webSocketRequest.resourceURL;
-    this.httpRequest = webSocketRequest.httpRequest;
-    this.remoteAddress = webSocketRequest.remoteAddress;
-    this.webSocketVersion = webSocketRequest.webSocketVersion;
-    this.requestedExtensions = webSocketRequest.requestedExtensions;
-    this.cookies = webSocketRequest.cookies;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.websocket.WebSocketRouterRequest.super_"></a>[function <span class="apidocSignatureSpan">websocket.WebSocketRouterRequest.</span>super_ ()](#apidoc.element.websocket.WebSocketRouterRequest.super_)
-- description and source-code
-```javascript
-function EventEmitter() {
-  EventEmitter.init.call(this);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.websocket.WebSocketRouterRequest.prototype"></a>[module websocket.WebSocketRouterRequest.prototype](#apidoc.module.websocket.WebSocketRouterRequest.prototype)
-
-#### <a name="apidoc.element.websocket.WebSocketRouterRequest.prototype.accept"></a>[function <span class="apidocSignatureSpan">websocket.WebSocketRouterRequest.prototype.</span>accept (origin, cookies)](#apidoc.element.websocket.WebSocketRouterRequest.prototype.accept)
-- description and source-code
-```javascript
-accept = function (origin, cookies) {
-    var connection = this.webSocketRequest.accept(this.protocol, origin, cookies);
-    this.emit('requestAccepted', connection);
-    return connection;
-}
-```
-- example usage
-```shell
-...
-if (!originIsAllowed(request.origin)) {
-  // Make sure we only accept requests from an allowed origin
-  request.reject();
-  console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
-  return;
-}
-
-var connection = request.accept('echo-protocol', request.origin);
-console.log((new Date()) + ' Connection accepted.');
-connection.on('message', function(message) {
-    if (message.type === 'utf8') {
-        console.log('Received Message: ' + message.utf8Data);
-        connection.sendUTF(message.utf8Data);
-    }
-    else if (message.type === 'binary') {
-...
-```
-
-#### <a name="apidoc.element.websocket.WebSocketRouterRequest.prototype.reject"></a>[function <span class="apidocSignatureSpan">websocket.WebSocketRouterRequest.prototype.</span>reject (status, reason, extraHeaders)](#apidoc.element.websocket.WebSocketRouterRequest.prototype.reject)
-- description and source-code
-```javascript
-reject = function (status, reason, extraHeaders) {
-    this.webSocketRequest.reject(status, reason, extraHeaders);
-    this.emit('requestRejected', this);
-}
-```
-- example usage
-```shell
-...
-  // put logic here to detect whether the specified origin is allowed.
-  return true;
-}
-
-wsServer.on('request', function(request) {
-if (!originIsAllowed(request.origin)) {
-  // Make sure we only accept requests from an allowed origin
-  request.reject();
-  console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
-  return;
-}
-
-var connection = request.accept('echo-protocol', request.origin);
-console.log((new Date()) + ' Connection accepted.');
-connection.on('message', function(message) {
-...
 ```
 
 
@@ -3396,71 +3204,6 @@ unmount = function () {
         httpServer.removeListener('upgrade', upgradeHandler);
     });
 }
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.websocket.utils"></a>[module websocket.utils](#apidoc.module.websocket.utils)
-
-#### <a name="apidoc.element.websocket.utils.BufferingLogger"></a>[function <span class="apidocSignatureSpan">websocket.utils.</span>BufferingLogger (identifier, uniqueID)](#apidoc.element.websocket.utils.BufferingLogger)
-- description and source-code
-```javascript
-function createBufferingLogger(identifier, uniqueID) {
-    var logFunction = require('debug')(identifier);
-    if (logFunction.enabled) {
-        var logger = new BufferingLogger(identifier, uniqueID, logFunction);
-        var debug = logger.log.bind(logger);
-        debug.printOutput = logger.printOutput.bind(logger);
-        debug.enabled = logFunction.enabled;
-        return debug;
-    }
-    logFunction.printOutput = noop;
-    return logFunction;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.websocket.utils.eventEmitterListenerCount"></a>[function <span class="apidocSignatureSpan">websocket.utils.</span>eventEmitterListenerCount (emitter, type)](#apidoc.element.websocket.utils.eventEmitterListenerCount)
-- description and source-code
-```javascript
-eventEmitterListenerCount = function (emitter, type) {
-  if (typeof emitter.listenerCount === 'function') {
-    return emitter.listenerCount(type);
-  } else {
-    return listenerCount.call(emitter, type);
-  }
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.websocket.utils.extend"></a>[function <span class="apidocSignatureSpan">websocket.utils.</span>extend (dest, source)](#apidoc.element.websocket.utils.extend)
-- description and source-code
-```javascript
-function extend(dest, source) {
-    for (var prop in source) {
-        dest[prop] = source[prop];
-    }
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.websocket.utils.noop"></a>[function <span class="apidocSignatureSpan">websocket.utils.</span>noop ()](#apidoc.element.websocket.utils.noop)
-- description and source-code
-```javascript
-noop = function (){}
 ```
 - example usage
 ```shell
